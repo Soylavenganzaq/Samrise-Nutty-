@@ -6,19 +6,25 @@
 
     <div class="row">
 
+        <!-- PRODUCTOS DEL CARRITO -->
+
         <div class="col-lg-8">
 
             <h2 class="mb-4">
+
                 🛒 Mi Carrito
+
             </h2>
 
             <div id="lista-carrito">
 
-                <!-- Aquí JavaScript agregará los productos -->
+                <!-- Los productos se cargan con JavaScript -->
 
             </div>
 
         </div>
+
+        <!-- RESUMEN -->
 
         <div class="col-lg-4">
 
@@ -26,13 +32,24 @@
 
                 <div class="card-body">
 
-                    <h3>Resumen del pedido</h3>
+                    <h3>
+
+                        Resumen del Pedido
+
+                    </h3>
 
                     <hr>
 
                     <p>
+
                         Productos:
-                        <span id="cantidad-productos">0</span>
+
+                        <span id="cantidad-productos">
+
+                            0
+
+                        </span>
+
                     </p>
 
                     <h4 id="total-carrito">
@@ -41,11 +58,18 @@
 
                     </h4>
 
-                    <button class="btn btn-principal w-100 mt-4">
+                    <div class="d-grid mt-4">
 
-                        Finalizar Compra
+                        <button
+                            type="button"
+                            class="btn btn-principal btn-lg"
+                            onclick="window.location.href='/checkout';">
 
-                    </button>
+                            Finalizar Compra
+
+                        </button>
+
+                    </div>
 
                 </div>
 
@@ -56,5 +80,19 @@
     </div>
 
 </div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    if(typeof mostrarCarrito === "function"){
+
+        mostrarCarrito();
+
+    }
+
+});
+
+</script>
 
 {% endblock %}
