@@ -5,24 +5,31 @@ productos_bp = Blueprint("productos", __name__)
 productos = [
 
     {
-        "nombre":"Chocolate Chips",
-        "precio":8000,
-        "descripcion":"Galleta con chispas de chocolate",
-        "imagen":"galleta1.jpg"
+        "nombre": "galletas de pene",
+        "precio": 8000,
+        "descripcion": "Galleta con chispas de chocolate",
+        "imagen": "galleta1.jpeg"
     },
 
     {
-        "nombre":"Brownie Cookie",
-        "precio":10000,
-        "descripcion":"Sabor intenso a chocolate",
-        "imagen":"galleta2.jpg"
+        "nombre": "Brownie de panocha",
+        "precio": 10000,
+        "descripcion": "Sabor intenso a chocolate",
+        "imagen": "galleta2.jpeg"
     },
 
     {
-        "nombre":"Red Velvet",
-        "precio":12000,
-        "descripcion":"Nuestra favorita",
-        "imagen":"galleta3.jpg"
+        "nombre": "gelatina de vulva",
+        "precio": 12000,
+        "descripcion": "Nuestra favorita",
+        "imagen": "galleta3.jpeg"
+    },
+
+    {
+        "nombre": "gelatina de vulva",
+        "precio": 12000,
+        "descripcion": "Nuestra favorita",
+        "imagen": "galleta4.jpeg"
     }
 
 ]
