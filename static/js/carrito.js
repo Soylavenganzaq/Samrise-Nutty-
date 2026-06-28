@@ -4,6 +4,24 @@
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+function mostrarToast(nombre){
+
+    const toast = document.getElementById("toast-carrito");
+
+    const texto = document.getElementById("toast-texto");
+
+    texto.innerHTML = `"${nombre}" fue agregado al carrito.`;
+
+    toast.classList.add("mostrar");
+
+    setTimeout(()=>{
+
+        toast.classList.remove("mostrar");
+
+    },3000);
+
+}
+
 function guardarCarrito() {
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
@@ -62,7 +80,7 @@ function agregarProducto(nombre,precio,imagen){
 
     guardarCarrito();
 
-    alert(nombre + " agregado al carrito");
+    mostrarToast(nombre);
 
 }
 
