@@ -472,3 +472,64 @@ text-align:center;
 }
 
 }
+
+
+/*=========================
+      CARRITO
+==========================*/
+
+.resumen-carrito{
+
+    border:none;
+
+    border-radius:20px;
+
+    position:sticky;
+
+    top:100px;
+
+    padding:20px;
+
+}
+
+.carrito-item{
+
+    border:none;
+
+    border-radius:20px;
+
+    padding:20px;
+
+}
+
+.imagen-carrito{
+
+    width:140px;
+
+    height:140px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+.carrito-item h4{
+
+    font-weight:700;
+
+}
+
+.carrito-item button{
+
+    width:40px;
+
+}
+
+.resumen-carrito h3{
+
+    color:#8B5E3C;
+
+    margin-bottom:20px;
+
+}

@@ -40,7 +40,13 @@
 
                     </h5>
 
-                    <button class="btn btn-principal w-100">
+                    <button class="btn btn-principal w-100"
+                        onclick="agregarProducto(
+                        '{{ producto.nombre }}',
+                        {{ producto.precio }},
+                        '{{ producto.imagen }}'
+
+                        )">
 
                         🛒 Agregar
 
