@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container mt-5 pt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-5">
+
+            <div class="card shadow p-4">
+
+                <h2 class="text-center mb-4">
+
+                    Panel Administrativo
+
+                </h2>
+
+                <form action="/login" method="POST">
+
+                    <div class="mb-3">
+
+                        <label>Usuario</label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="usuario"
+                            required>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label>Contraseña</label>
+
+                        <input
+                            type="password"
+                            class="form-control"
+                            name="password"
+                            required>
+
+                    </div>
+
+                    <button class="btn btn-principal w-100">
+
+                        Ingresar
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

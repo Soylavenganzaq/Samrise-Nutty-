@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container mt-5 pt-5">
+
+    <div class="row">
+
+        <!-- PRODUCTOS DEL CARRITO -->
+
+        <div class="col-lg-8">
+
+            <h2 class="mb-4">
+
+                🛒 Mi Carrito
+
+            </h2>
+
+            <div id="lista-carrito">
+
+                <!-- Los productos se cargan con JavaScript -->
+
+            </div>
+
+        </div>
+
+        <!-- RESUMEN -->
+
+        <div class="col-lg-4">
+
+            <div class="card shadow resumen-carrito">
+
+                <div class="card-body">
+
+                    <h3>
+
+                        Resumen del Pedido
+
+                    </h3>
+
+                    <hr>
+
+                    <p>
+
+                        Productos:
+
+                        <span id="cantidad-productos">
+
+                            0
+
+                        </span>
+
+                    </p>
+
+                    <h4 id="total-carrito">
+
+                        Total: $0
+
+                    </h4>
+
+                    <div class="d-grid mt-4">
+
+                        <button
+                            type="button"
+                            class="btn btn-principal btn-lg"
+                            onclick="window.location.href='/checkout';">
+
+                            Finalizar Compra
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    if(typeof mostrarCarrito === "function"){
+
+        mostrarCarrito();
+
+    }
+
+});
+
+</script>
+
+{% endblock %}

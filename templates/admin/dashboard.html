@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container mt-5 pt-5">
+
+    <h1>
+
+        Bienvenido Administrador
+
+    </h1>
+
+    <hr>
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <div class="card shadow p-4 text-center">
+
+                <h3>
+
+                    Productos
+
+                </h3>
+
+                <a href="#" class="btn btn-principal">
+
+                    Administrar
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card shadow p-4 text-center">
+
+                <h3>
+
+                    Pedidos
+
+                </h3>
+
+                <a href="#" class="btn btn-principal">
+
+                    Ver Pedidos
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card shadow p-4 text-center">
+
+                <h3>
+
+                    Estadísticas
+
+                </h3>
+
+                <a href="#" class="btn btn-principal">
+
+                    Ver
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <a href="/logout" class="btn btn-danger">
+
+        Cerrar Sesión
+
+    </a>
+
+</div>
+
+{% endblock %}
